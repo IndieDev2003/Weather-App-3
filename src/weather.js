@@ -11,9 +11,18 @@ const weatherImg=document.querySelector("#weather-img")
 
 
 async function CheckWeather(city){
-    const response=await fetch(apiUrl+city+apiKey+fetchUnit)
+
+    let cityNm=""
+    if(city===""){
+        cityNm="Faridabad"
+    }else{
+        cityNm=city
+    }
+    const response=await fetch(apiUrl+cityNm+apiKey+fetchUnit)
     const value=await response.json()
     console.log(value)
+
+  
 
     document.querySelector("#search-text").style.display="none"
     document.querySelector(".weather-card").style.display="block"
