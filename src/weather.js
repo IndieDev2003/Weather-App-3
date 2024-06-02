@@ -23,7 +23,7 @@ async function CheckWeather(city){
     console.log(value)
 
   
-
+    
     document.querySelector("#search-text").style.display="none"
     document.querySelector(".weather-card").style.display="block"
     document.querySelector("#name").innerHTML=value.name+", "+value.sys.country
