@@ -18,7 +18,7 @@ body{
     background-position: center;
 }
 .main{
-    height:90vh;
+    height:80vh;
     width:100%;
     display:flex;
     align-items: center;
@@ -26,11 +26,13 @@ body{
    
 }
 .card{
-    width:80vw;
-    background-color: #00000070;
+    width:90vw;
+    background-color: #4861f077;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .card h1{
     font-size: 5vw;
@@ -42,18 +44,20 @@ body{
     align-items: center;
 }
 .city-search{
-    width:90%;
+    width:100%;
+    height:10%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    border:1px solid black;
     justify-content: space-between;
     margin-top: 2vh;
     border-radius:10px;
+    box-shadow: 5px 5px 10px rgb(8, 8, 8);
     overflow: hidden;
 }
 .city-search input{
+    width:80%;
     flex:1;
     outline: none;
     border:none;
@@ -67,6 +71,9 @@ body{
     border:none;
     border-radius: 10px;
     background-color: rgb(245, 91, 35);
+}
+#search-text{
+    margin-top:20px;
 }
 .weather-card{
     display: none;
@@ -104,22 +111,24 @@ body{
 
 }
 .footer{
-    height:10vh;
+    height:0vh;
     width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    color:rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.247);
     margin:none;
     padding:none;
-    position: fixed;
+    /* position:absolute; */
     text-align: center;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 .footer h2{
     background: transparent;
+    /* flex:; */
 
 }
 .footer span{
