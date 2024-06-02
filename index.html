@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App 3 - Gagan Suman</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+           <div class="card-top">
+            <h1>Weather by Cats</h1>
+            <div class="city-search">
+                <input type="text" placeholder="Search City" id="city-input">
+                <button id="search-btn"><i class="ri-search-line"></i></button>
+            </div>
+           </div>
+           <h2 id="search-text">Enter City To See Weather</h2>
+           <div class="weather-card">
+            <img src="./images/clear.png" id="weather-img">
+            <div class="city-info">
+                <h3 id="tempratue">35.C</h3>
+                <h2 id="name">Faridabad</h2>    
+                <h3 id="current-condition">Hello</h3>
+            </div>
+            <div class="weather-bottom">
+                <div class="btm-side">
+                    <img src="images/wind.png" id="wind">
+                    <div class="btm-info">
+                        <h4>Wind Speed</h4>
+                        <h4 id="wind-speed">23Km/h</h4>
+                    </div>
+                </div>
+                <div class="btm-side">
+                    <img src="./images/humidity.png" id="humidity-img">
+                    <div class="btm-info">
+                        <h4>Humidity</h4>
+                        <h4 id="humidity">5%</h4>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <h2>Made By <span>❤</span> for Cats</h2>
+    </div>
+
+    
+
+    <script src="./src/weather.js"></script>
+</body>
+</html>

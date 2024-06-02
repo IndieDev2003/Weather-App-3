@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/7d/8d/e7/7d8de70f1e545be3eb9f344b4e038a2e.jpg);
+    background-size:cover ;
+    background-position: center;
+}
+.main{
+    height:90vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.card{
+    width:80vw;
+    background-color: #00000070;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.card h1{
+    font-size: 5vw;
+}
+.card-top{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city-search{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border:1px solid black;
+    justify-content: space-between;
+    margin-top: 2vh;
+    border-radius:10px;
+    overflow: hidden;
+}
+.city-search input{
+    flex:1;
+    outline: none;
+    border:none;
+    padding:0px 5px;
+    background: transparent;
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+}
+.city-search button{
+    padding:10px 30px;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(245, 91, 35);
+}
+.weather-card{
+    display: none;
+}
+#weather-img{
+    height:150px;
+}
+#current-condition{
+    font-size:smaller;
+    font-weight: 500;
+}
+.weather-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btm-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.btm-side img{
+    height: 50px;
+
+}
+.btm-info{
+    margin:10px 15px;
+    text-align: left;
+    border-left: 2px solid white;
+    padding:0px 5px;
+}
+.btm-info h4{
+    font-size: small;
+
+}
+.footer{
+    height:10vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.247);
+    margin:none;
+    padding:none;
+    position: fixed;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.footer h2{
+    background: transparent;
+
+}
+.footer span{
+    color:red;
+    background: transparent;
+
+}
