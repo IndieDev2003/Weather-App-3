@@ -34,10 +34,10 @@ async function CheckWeather(city){
     
     weatherImg.src=`https://openweathermap.org/img/wn/${value.weather[0].icon}@2x.png`
     let time=`${value.weather[0].icon}`.toString()
-    if(time.includes("d")){
+    if(time.includes("n")){
         document.querySelector("body").style.backgroundImage=`url(${nightBack})`
     }
-    else if(time.includes("n")){
+    else if(time.includes("d")){
         document.querySelector("body").style.backgroundImage=`url(${dayBack})`
     }
 }
